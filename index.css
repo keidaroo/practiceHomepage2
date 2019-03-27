@@ -3,6 +3,9 @@
   font-size: 1.4rem;
   font-family: 'Comfortaa', cursive;
 }
+.textStyleSerif{
+  font-family: 'Open Serif', serif;
+}
 .navbar-link:not(.is-arrowless)::after{
   border-color:#404040;
 }
