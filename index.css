@@ -1,23 +1,36 @@
-.logo{
+.logo {
   padding: 1rem;
   font-size: 1.4rem;
   font-family: 'Comfortaa', cursive;
 }
-.textStyleSerif{
-  font-family: 'Open Serif', serif;
+
+.textStyleSerif {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
-.navbar-link:not(.is-arrowless)::after{
-  border-color:#404040;
+
+.navbar-link:not(.is-arrowless)::after {
+  border-color: #404040;
 }
-.gradients{
+
+.navbar-item.has-dropdown .navbar-dropdown {
+  display: none;
+}
+
+.navbar-item.has-dropdown.is-active .navbar-dropdown {
+  display: block;
+}
+
+.gradients {
   background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 }
 
 .bounce {
-	-moz-animation: bounce 3s infinite;
-	-webkit-animation: bounce 3s infinite;
-	animation: bounce 3s infinite;
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
 }
+
 @-moz-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
@@ -32,6 +45,7 @@
     transform: translateY(-15px);
   }
 }
+
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
@@ -46,6 +60,7 @@
     transform: translateY(-15px);
   }
 }
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
@@ -66,12 +81,14 @@
     transform: translateY(-15px);
   }
 }
+
 /* Demo Purpose Only*/
+
 .demo {
   font-family: 'Raleway', sans-serif;
-	color:#fff;
-    display: block;
-    margin: 0 auto;
-    padding: 15px 0;
-    text-align: center;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
 }
