@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  AOS.init();
 
   // Check for click events on the navbar burger icon
   $(".navbar-burger").click(function () {
