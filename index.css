@@ -25,6 +25,12 @@
   background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 }
 
+#bookImage {
+  background-image: url("img/bookImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .bounce {
   -moz-animation: bounce 3s infinite;
   -webkit-animation: bounce 3s infinite;
