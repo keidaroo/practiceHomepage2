@@ -17,8 +17,22 @@
   display: none;
 }
 
+hr {
+  height: 1px;
+  border: none;
+  border-top: 1px #404040 solid;
+}
+
+.navbar-menu.is-active .navbar-item.has-dropdown .navbar-link:not(.is-arrowless)::after {
+  border-color: #ffff;
+}
+
 .navbar-item.has-dropdown.is-active .navbar-dropdown {
   display: block;
+}
+
+.noDisplay {
+  display: none;
 }
 
 .gradients {
