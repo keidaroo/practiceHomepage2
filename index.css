@@ -39,8 +39,24 @@ hr {
   background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 }
 
+.lineheightBig {
+  line-height: 150%;
+}
+
+.gradientsBook {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
 .gradientsAbout {
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.listing {
+  margin-left: kem;
+}
+
+.gradientsServices {
+  background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
 }
 
 .okamoto {

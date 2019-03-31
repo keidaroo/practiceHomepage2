@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GLOCOMM</title>
+  <link rel="shortcut icon" href="../../img/glocommLogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Assistant|Comfortaa|Lato:300|Noto+Sans+JP:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Bulma Version 0.7.4-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="../../index.css" />
+  <style type="text/css">
+    html,
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../../index.js"></script>
+</head>
+
+<body>
+  <section class="hero is-fullheight is-default is-bold">
+    <div class="hero-head">
+      <nav class="navbar is-transparent is-fixed-top has-background-white">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item logo" href="../">
+              GLOCOMM
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="/">
+                Home
+              </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="/about/thinking/">
+                  About
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="/about/thinking/">
+                    考え方
+                  </a>
+                  <a class="navbar-item" href="/about/method/">
+                    メソッド
+                  </a>
+                  <a class="navbar-item" href="/about/profile/">
+                    プロフィール
+                  </a>
+                  <a class="navbar-item" href="/about/caseStudies/">
+                    過去の実績
+                  </a>
+                  <a class="navbar-item" href="/about/contact">
+                    Contact
+                  </a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="/about/book/world/
+                ">
+                  Book </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="/book/world-book/">
+                    世界一孤独な日本のオジサン
+                  </a>
+                  <a class="navbar-item" href="/book/media">
+                    メディア掲載
+                  </a>
+                  <a class="navbar-item" href="/book/world-study/">
+                    世界の孤独研究・メディア論調
+                  </a>
+
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="/services/relation">
+                  Services
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="/services/relation/">
+                    Public Relations
+                  </a>
+                  <a class="navbar-item" href="/services/speaking/">
+                    Public Speaking
+                  </a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="/media/web/">
+                  Media
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="/media/web/">
+                    ウェブメディア
+                  </a>
+                  <a class="navbar-item" href="/media/tv/">
+                    テレビ
+                  </a><a class="navbar-item" href="/media/magazine/">
+                    雑誌
+                  </a>
+                  <a class="navbar-item" href="/media/article/">
+                    執筆記事
+                  </a>
+                  <a class="navbar-item" href="/media/blog/">
+                    Blog
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+    </div>
+    <div class="hero-body textStyleSerif animated fadeIn">
+      <div class="container has-text-centered">
+        <div class="columns is-vcentered ">
+          <div class="column is-4">
+            <figure class="image is-1by1 gradientsBook">
+
+            </figure>
+          </div>
+          <div class="column is-6 is-offset-2">
+            <h1 class="title is-2 textStyleSerif ">
+              Book
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-foot bounce">
+      <div class="container has-text-centered">
+        <img width="40" height="40" alt=""
+          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+      </div>
+    </div>
+
+  </section>
+  <section class="hero is-large is-default is-bold">
+    <div class="hero-body has-background-light">
+
+
+      <div class="container has-text-centered">
+        <div class="columns is-vcentered " data-aos="fade-up">
+          <aside class="menu column is-3">
+            <p class="menu-label">
+              Book
+            </p>
+            <ul class="menu-list subtitle">
+              <li><a class="navbar-item" href="/book/world-book/">
+                  世界一孤独な日本のオジサン
+                </a></li>
+              <li> <a class="navbar-item " href="/book/media/">
+                  メディア掲載
+                </a></li>
+              <li> <a class="navbar-item has-text-info" href="/book/world-study/">
+                  世界の孤独研究・メディア論調
+                </a></li>
+            </ul>
+
+          </aside>
+
+          <div class="column is-7 is-offset-2 ">
+            <h1 class="subtitle is-4 is-size-5 has-text-left">
+              <br>「孤独」は今、世界で「現代の伝染病」ととらえられ、対策が進められ、連日報道が相次いでいます。孤独に対する世界の有力メディア報道や調査研究の一部をご紹介していきます。(2018年10月～）<br>
+              <br>
+              2月10日、角川新書より「世界一孤独な日本のオジサン」を上梓いたしました。
+              <br>
+              <br>
+            </h1>
+
+            <br>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-large is-default is-bold">
+    <div class="hero-body has-background-white">
+      <div class="container has-text-centered">
+        <div class="columns is-vcentered " data-aos="fade-up">
+          <div class="column is-4">
+            <h1 class="title   textStyleSerif ">
+              STUDIES
+            </h1><br>
+
+          </div>
+          <div class="column is-7  ">
+            <h1 class="subtitle is-7 is-size-6 has-text-left lineheightBig">
+              <span class="is-size-6 has-text-center">
+                2018年11月</span>
+              <br>
+              <a
+                href="https://metro.co.uk/2018/11/01/nightclub-for-pensioners-aims-to-tackle-loneliness-in-the-elderly-8095455/">ナイトクラブが高齢者の孤独を癒す　Metro
+                2018.11.01</a><br> <a
+                href="https://www.huffingtonpost.co.uk/entry/could-books-help-cure-the-uks-epic-loneliness-epidemic_uk_5bdafc03e4b0da7bfc178d81">イギリスの孤独伝染病は途方もないレベルに達している。本はその対策となるのか。Huffpost
+                2018.11.02</a><br>
+              <a href="https://www.theguardian.com/commentisfree/2018/nov/01/loneliness-illness-body-mind-epidemic">孤独は精神の病ではなく、肉体的な病である　The
+                Guardian 2018.11.01</a><br><br>
+              <span class="is-size-6 has-text-center">
+                2018年10月</span><br>
+              <a
+                href="https://www.forbes.com/sites/alicegwalton/2018/10/30/7-ways-loneliness-and-connectedness-affect-mental-health/#7b07f59fe1dc">孤独がメンタルヘルスに与える７つの影響　Forbes
+                2018.10.30</a><br>
+              <a
+                href="https://www.menshealth.com.au/trust-in-others-predicting-mortality-risk?fbclid=IwAR2q-7HoG9m66T8pjRVdV7Pw6NxYqtyTnMxInGxiBwotBAbwUwssnd2Rtfo">他人を信用していない場合は、死亡リスクが上昇する　Australian
+                Men’s Health 2018.10.26</a><br>
+              <a
+                href="http://www.asianage.com/discourse/281018/the-fear-of-living-with-ourselves-no-magic-pill-for-loneliness.html">ぼっちの恐怖。孤独に魔法の薬はない　The
+                Asian Times 2018.10.28</a><br>
+              <a
+                href="https://qz.com/1439200/loneliness-costs-the-us-almost-7-billion-extra-each-year/?utm_source=qzfb&amp;fbclid=IwAR39OzkjEz3p9QJfm-eb6GcEsJvDqetWf_rizbi0cT9Oa9SLAervdIEz14c">孤独は毎年、国家にとって70億ドル（7500億円）負担増に　Quartz
+                2018.10.28</a><br>
+              <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2709717">ニュージーランドにおける100歳以上の長寿者の孤独とそれ以外の高齢者の孤独度比較　JAMA
+                Network 2018.10.26 </a>　<br>
+              <a
+                href="https://academic.oup.com/psychsocgerontology/advance-article-abstract/doi/10.1093/geronb/gby112/5133324?redirectedFrom=fulltext">孤独と痴ほう症リスク　The
+                Journal of Gerontology 2018.10.26</a><br>
+              <a href="https://www.gq.com/story/why-men-are-lonely">なぜ、男性は孤独なのか　GQ
+                2018.10.19</a><br>
+              <a
+                href="https://www.theguardian.com/society/2018/oct/19/loneliness-minister-proposed-to-tackle-australian-social-isolation">オーストラリアにも孤独担当大臣を　The
+                Guardian 2018.10.18</a><br>
+              <a href="https://www.theatlantic.com/education/archive/2018/10/loneliness-prevention-schools/573280/">孤独対策は教室から　The
+                Atlantic 2018.10.17</a><br>
+              <a href="https://www.telegraph.co.uk/news/2018/10/14/cookery-classes-call-postman-stop-loneliness/">料理教室や郵便局員の声掛けで孤独を減らす　The
+                Telegraph 2018.10.15</a><br>
+              <a href="http://fortune.com/2018/10/15/uk-government-loneliness-strategy/">最も深刻に健康を脅かすもの。孤独への対策を英政府が打ち出す　Fortune
+                2018.10.15</a><br>
+              <a href="https://www.theguardian.com/society/2018/oct/14/loneliness-social-prescribing-theresa-may">孤独は社会的処方箋で対処するとテレザ・メイは断言　The
+                Guardian 2018.10.14</a><br>
+              <a
+                href="https://www.washingtonpost.com/opinions/we-have-an-epidemic-of-loneliness-how-can-we-fix-it/2018/10/12/e8378a38-cd92-11e8-920f-dd52e1ae4570_story.html?utm_term=.bffd908607e2">我々は孤独という伝染病に対峙している。どうするべきか。The
+                Washington Post 2010.10.12</a><br>
+              <a
+                href="https://www.telegraph.co.uk/health-fitness/mind/shame-admitting-lonely-overcoming-does-not-have-hopeless-battle/">孤独を認めるのは恥だ。しかし、望みがないわけではない。The
+                Telegraph　2018.10.10</a><br>
+              <a
+                href="https://www.forbes.com/sites/alicegwalton/2018/10/10/this-may-be-the-biggest-threat-to-mental-health-today/#cc5e88227599">孤独はメンタルヘルスの最大の脅威　Forbes
+                2018.10.10</a><br>
+              <a href="https://www.bbc.com/news/education-45801803">孤独は高齢者と同時に若い人をも脅かす　BBC 2018.10.09 </a><br>
+              <a
+                href="https://qz.com/1413576/loneliness-is-bad-for-our-health-now-governments-around-the-world-are-finally-tackling-the-problem/">孤独の健康影響に各国の政府が立ち上がる　Quartz
+                2018.10.09</a><br>
+              <a href="https://qz.com/1413047/lonely-people-face-less-social-stigma-than-they-think/">なぜ我々は孤独を恥じるべきではないのか　Quartz
+                2018.10.05</a><br>
+              <a
+                href="http://www.bbc.com/future/story/20180928-the-surprising-truth-about-loneliness">孤独の驚くべき真実　BBC　2018.10.01</a><br>
+
+              <a
+                href="https://www.telegraph.co.uk/news/2018/10/01/loneliness-felt-intensely-young-people-study-finds-turning-facebook/">孤独は若い人たちの間で最も深刻　The
+                Telegraph 2018.10. 01</a><br>
+            </h1>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-middle is-default is-bold">
+    <div class="hero-body has-background-light">
+      <div class="container has-text-centered">
+        <div class="columns is-vcentered " data-aos="fade-up">
+          <div class="column is-5">
+            <h1 class="title   textStyleSerif ">
+              CONTACT
+            </h1>
+
+          </div>
+          <div class="column is-7">
+            <h1 class="subtitle is-4 is-size-5 has-text-center">
+              <br>
+              <br>
+              株式会社グローコム<br>
+              <a href="mailto:info@glocomm.co.jp" target="_top">info@glocomm.co.jp</a>
+            </h1>
+            <br>
+          </div>
+
+        </div>
+        <hr>
+        <div class="column is-12 ">
+          <h1 class="subtitle is-4 is-size-5 has-text-center   textStyleSerif">
+            Global Communications and Solutions Inc.
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
