@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GLOCOMM</title>
+  <link rel="shortcut icon" href="/img/glocommLogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Assistant|Comfortaa|Lato:300|Noto+Sans+JP:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Bulma Version 0.7.4-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="/index.css" />
+  <style type="text/css">
+    html,
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="/index.js"></script>
+</head>
+
+<body>
+  <section class="hero is-fullheight is-default is-bold">
+    <div class="hero-head">
+      <nav class="navbar is-transparent is-fixed-top has-background-white">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item logo" href="../">
+              GLOCOMM
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="/">
+                Home
+              </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="/about/thinking/">
+                  About
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="/about/thinking/">
+                    考え方
+                  </a>
+                  <a class="navbar-item" href="/about/method/">
+                    メソッド
+                  </a>
+                  <a class="navbar-item" href="/about/profile/">
+                    プロフィール
+                  </a>
+                  <a class="navbar-item" href="/about/caseStudies/">
+                    過去の実績
+                  </a>
+                  <a class="navbar-item" href="/about/contact">
+                    Contact
+                  </a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="/about/book/world/
+                ">
+                  Book </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="/book/world-book/">
+                    世界一孤独な日本のオジサン
+                  </a>
+                  <a class="navbar-item" href="/book/media">
+                    メディア掲載
+                  </a>
+                  <a class="navbar-item" href="/book/world-study/">
+                    世界の孤独研究・メディア論調
+                  </a>
+
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="/services/relation">
+                  Services
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="/services/relation/">
+                    Public Relations
+                  </a>
+                  <a class="navbar-item" href="/services/speaking/">
+                    Public Speaking
+                  </a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="/media/web/">
+                  Media
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="/media/web/">
+                    ウェブメディア
+                  </a>
+                  <a class="navbar-item" href="/media/tv/">
+                    テレビ
+                  </a><a class="navbar-item" href="/media/magazine/">
+                    雑誌
+                  </a>
+                  <a class="navbar-item" href="/media/article/">
+                    執筆記事
+                  </a>
+                  <a class="navbar-item" href="/media/blog/">
+                    Blog
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+    <div class="hero-body textStyleSerif animated fadeIn">
+      <div class="container has-text-centered">
+        <div class="columns is-vcentered ">
+          <div class="column is-4">
+            <figure class="image is-1by1 gradientsAbout">
+
+            </figure>
+          </div>
+          <div class="column is-6 is-offset-2">
+            <h1 class="title is-2  textStyleSerif ">
+              What We Do
+            </h1>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-foot bounce">
+      <div class="container has-text-centered">
+        <img width="40" height="40" alt=""
+          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+      </div>
+    </div>
+
+  </section>
+  <section class="hero is-large is-default is-bold">
+    <div class="hero-body has-background-light">
+
+      <div class="container has-text-centered">
+        <div class="columns is-vcentered " data-aos="fade-up">
+          <aside class="menu column is-3">
+            <p class="menu-label">
+              About
+            </p>
+            <ul class="menu-list subtitle">
+              <li><a class="navbar-item" href="/about/thinking/">
+                  考え方
+                </a></li>
+              <li> <a class="navbar-item " href="/about/method/">
+                  メソッド
+                </a></li>
+              <li> <a class="navbar-item" href="/about/profile/">
+                  プロフィール
+                </a></li>
+              <li> <a class="navbar-item has-text-info" href="/about/caseStudies/">
+                  過去の実績
+                </a></li>
+              <li><a class="navbar-item" href="/about/contact/">
+                  Contact
+                </a></li>
+            </ul>
+
+          </aside>
+
+          <div class="column is-7 is-offset-2 ">
+            <h1 class="subtitle is-4 is-size-5 has-text-left">
+              <br>
+              <br>人生、ビジネスの成功のカギ。それはコミュニケーションです。<br><br>会社や自分の強みや魅力を伝える、相手を説得する、部下を鼓舞する、愛する人に思いを伝える・・。その力と可能性は無限大です。<br><br>私たちはコミュニケーションに課題を抱えるお客様のお悩みに寄り添い、一緒に解決したいと考えています。
+            </h1>
+            <br>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-large is-default is-bold">
+    <div class="hero-body has-background-white">
+      <div class="container has-text-centered">
+        <div class="columns is-vcentered " data-aos="fade-up">
+          <div class="column is-5">
+            <h1 class="title   textStyleSerif ">
+              Case Studies
+            </h1>
+          </div>
+          <div class="column is-7  ">
+            <h1 class="subtitle is-4 is-size-5 has-text-left">
+              コミュニケーショントレーニング
+            </h1>
+            <ul class="subtitle is-4 is-size-6 has-text-left" style="list-style: circle">
+              <li>外資系製薬会社新外国人社長及び新任役員コミュニケーショントレーニング</li>
+              <li>大手紳士服メーカートップの新戦略発表会プレゼントレーニング</li>
+              <li> 大手印刷会社米国法人トップコミュニケーショントレーニング</li>
+              <li> 大手電機メーカー新任役員コミュニケーション研修</li>
+              <li> 大手電機メーカー新社長及び役員グローバルプレゼンテーショントレーニング</li>
+              <li> 大手製薬会社役員プレゼンテーショントレーニング</li>
+              <li> 外資系製薬会社女性役員プレゼントレーニング</li>
+              <li> 大手自動車部品会社社長及び役員プレゼントレーニング</li>
+              <li> 大手工作機器メーカー役員向けコミュニケーションセミナー</li>
+              <li> 大手製薬会社・新製品説明会プレゼントレーニング</li>
+              <li> 外資系消費財メーカー、マーケティング担当者向けコミュニケーションセミナー</li>
+              <li> 大手銀行新社長コミュニケーショントレーニング</li>
+              <li> 大手通信会社新サービス発表会コミュニケーショントレーニング</li>
+              <li> 大手医療法人理事長コミュニケーショントレーニング</li>
+              <li> 大学病院医師向けコミュニケーショントレーニング</li>
+
+              <li> 大手自動車部品会社・新社長、新任役員コミュニケーショントレーニング</li>
+              <li> 大手二輪製造会社新任社長コミュニケーショントレーニング</li>
+              <li> 大手通信会社女性役員コミュニケーショントレーニング</li>
+              <li> 中央官庁役員コミュニケーショントレーニング</li>
+              <li> フィンテック関連会社社長コミュニケーショントレーニング</li>
+              <li> 大手化粧品メーカー海外向けスピーチライティング</li>
+            </ul>
+            <h1 class="subtitle is-4 is-size-5 has-text-left">
+              PRパーソン向けセミナー
+            </h1>
+            <ul class="subtitle is-4 is-size-6 has-text-left" style="list-style: circle">
+              <li>次世代PRセミナ―～エンゲージメントの作り方講習
+              <li>PRパーソンのためのコミュニケーション講座</li>
+              <li>スピーチライティング講習</li>
+              <li>ソーシャル時代の自治体PR講習</li>
+
+            </ul>
+            <h1 class="subtitle is-4 is-size-5 has-text-left">
+              海外調査
+            </h1>
+            <ul class="subtitle is-4 is-size-6 has-text-left" style="list-style: circle">
+              <li>海外CSR広報事例調査</li>
+              <li>海外広報事例調査 </li>
+            </ul>
+            <h1 class="subtitle is-4 is-size-5 has-text-left">
+              インタビュー及び原稿作成
+            </h1>
+            <ul class="subtitle is-4 is-size-6 has-text-left" style="list-style: circle">
+              <li>ノーベル賞学者に対する英語インタビュー及び販促用原稿の作成</li>
+              <li>大学新理事長インタビュー及びパンフレット用原稿作成></li>
+            </ul>
+            <h1 class="subtitle is-4 is-size-5 has-text-left">
+              アドバイザー業務
+            </h1>
+            <ul class="subtitle is-4 is-size-6 has-text-left" style="list-style: circle">
+              <li>スタートアップ企業のコミュニケーションアドバイザー・顧問
+              </li>
+            </ul>
+            <h1 class="subtitle is-4 is-size-5 has-text-left">
+              ワークショップ・セミナー
+            </h1>
+            <ul class="subtitle is-4 is-size-6 has-text-left" style="list-style: circle">
+              <li>女性管理職のためのコミュニケーションワークショップ</li>
+              <li>
+                最強のコミュ力の鍛え方ワークショップ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-middle is-default is-bold">
+    <div class="hero-body has-background-light">
+      <div class="container has-text-centered">
+        <div class="columns is-vcentered " data-aos="fade-up">
+          <div class="column is-5">
+            <h1 class="title   textStyleSerif ">
+              CONTACT
+            </h1>
+
+          </div>
+          <div class="column is-7">
+            <h1 class="subtitle is-4 is-size-5 has-text-center">
+              <br>
+              <br>
+              株式会社グローコム<br>
+              <a href="mailto:info@glocomm.co.jp" target="_top">info@glocomm.co.jp</a>
+            </h1>
+            <br>
+          </div>
+
+        </div>
+        <hr>
+        <div class="column is-12 ">
+          <h1 class="subtitle is-4 is-size-5 has-text-center   textStyleSerif">
+            Global Communications and Solutions Inc.
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
