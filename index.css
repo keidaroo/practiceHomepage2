@@ -39,6 +39,10 @@ hr {
   background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 }
 
+.gradientsAbout {
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
 #bookImage {
   background-image: url("img/bookImage.jpg");
   background-repeat: no-repeat;
