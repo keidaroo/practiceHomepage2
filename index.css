@@ -43,6 +43,20 @@ hr {
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 
+.okamoto {
+  background-image: url("img/okamoto.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+.greg {
+  background-image: url("img/greg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
 #bookImage {
   background-image: url("img/bookImage.jpg");
   background-repeat: no-repeat;
