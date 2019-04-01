@@ -39,6 +39,10 @@ hr {
   background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 }
 
+.gradientsMedia {
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+}
+
 .lineheightBig {
   line-height: 150%;
 }
