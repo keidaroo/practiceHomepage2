@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GLOCOMM</title>
+  <link rel="shortcut icon" href="../../img/glocommLogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Assistant|Comfortaa|Lato:300|Noto+Sans+JP:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Bulma Version 0.7.4-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="../../index.css" />
+  <style type="text/css">
+    html,
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../../index.js"></script>
+</head>
+
+<body>
+  <section class="hero is-fullheight is-default is-bold">
+    <div class="hero-head">
+      <nav class="navbar is-transparent is-fixed-top has-background-white">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item logo" href="../../">
+              GLOCOMM
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="../../">
+                Home
+              </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="../../about/thinking/">
+                  About
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="../../about/thinking/">
+                    考え方
+                  </a>
+                  <a class="navbar-item" href="../../about/method/">
+                    メソッド
+                  </a>
+                  <a class="navbar-item" href="../../about/profile/">
+                    プロフィール
+                  </a>
+                  <a class="navbar-item" href="../../about/caseStudies/">
+                    過去の実績
+                  </a>
+                  <a class="navbar-item" href="../../about/contact">
+                    Contact
+                  </a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="../../about/book/world/
+                ">
+                  Book </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="../../book/world-book/">
+                    世界一孤独な日本のオジサン
+                  </a>
+                  <a class="navbar-item" href="../../book/media">
+                    メディア掲載
+                  </a>
+                  <a class="navbar-item" href="../../book/world-study/">
+                    世界の孤独研究・メディア論調
+                  </a>
+
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="../../services/relation">
+                  Services
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="../../services/relation/">
+                    Public Relations
+                  </a>
+                  <a class="navbar-item" href="../../services/speaking/">
+                    Public Speaking
+                  </a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="../../media/web/">
+                  Media
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="../../media/web/">
+                    ウェブメディア
+                  </a>
+                  <a class="navbar-item" href="../../media/tv/">
+                    テレビ
+                  </a><a class="navbar-item" href="../../media/magazine/">
+                    雑誌
+                  </a>
+                  <a class="navbar-item" href="../../media/article/">
+                    執筆記事
+                  </a>
+                  <a class="navbar-item" href="../../media/blog/">
+                    Blog
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+    </div>
+    <div class="hero-body textStyleSerif animated fadeIn">
+      <div class="container has-text-centered">
+        <div class="columns is-vcentered ">
+          <div class="column is-4">
+            <figure class="image is-1by1 gradientsMedia">
+
+            </figure>
+          </div>
+          <div class="column is-6 is-offset-2">
+            <h1 class="title is-2 textStyleSerif ">
+              Blog
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-foot bounce">
+      <div class="container has-text-centered">
+        <img width="40" height="40" alt=""
+          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+      </div>
+    </div>
+
+  </section>
+  <section class="hero is-large is-default is-bold">
+    <div class="hero-body has-background-light">
+
+
+      <div class="container has-text-centered">
+        <div class=" " data-aos="fade-up">
+          <div class="menu  is-12">
+            <p class="menu-label">
+              Media
+            </p>
+            <ul class="menu-list subtitle">
+              <li><a class="navbar-item" href="../../media/web/">
+                  ウェブメディア
+                </a></li>
+              <li> <a class="navbar-item" href="../../media/tv/">
+                  テレビ
+                </a></li>
+              <li> <a class="navbar-item" href="../../media/magazine/">
+                  雑誌
+                </a></li>
+              <li><a class="navbar-item  has-text-info" href="../../media/article/">
+                  執筆記事
+                </a></li>
+              <li>
+                <a href="../../media/blog/" class="navbar-item ">
+
+                  Blog
+                </a></li>
+            </ul>
+
+          </div>
+          <br>
+          <div class=" is-8 is-offset-3 ">
+            <h1 class="subtitle is-12 is-size-5 has-text-left lineheightBig">
+              <div class="onlyPadding"></div>
+              <span class="is-size-6 has-text-center">
+                November 29, 2018
+              </span><br>
+              <span class="is-size-3">何時間働くべきか</span><br><br>
+
+              世界を変えようと思ったら、週に80－100時間働かないとダメ、40時間では何も変えられない、と<a
+                href="https://www.inc.com/business-insider/elon-musk-says-you-need-to-work-80-hours-a-week-to-save-the-world.html?cid=sf01002&fbclid=IwAR3YC1Kw9KCIT2-wBTVTnzn9Ym54iJBDjawXP7ditcWOy464f7RPzht6nm0">イーロン・マスクが言っている。</a>これを、日本のトップが言ったら超炎上するだろうな、と思ったけど、まあ、もともと炎上キャラだから、いいのか。でも、彼の言うこともわかる気がするけど、ベゾスは一日8時間必ずきっちり寝て、夕飯の皿洗いも自分がやるとか言ってるから、人それぞれなんだろうな。ちなみに私は独立してから労働時間はめちゃくちゃ増えた。オンとオフの区別がなくなってしまうし。
+              でも、好きなことを仕事にしているから、ずっと仕事でも楽しいんだな～。
+              <br>
+              <br>
+              <div class="has-text-center is-10">
+                <figure class="image blog1  is-16by9">
+
+                </figure>
+              </div>
+              <br>
+
+              <div class="onlyPadding"></div>
+              <span class="is-size-6 has-text-center">
+                November 1, 2018
+              </span><br>
+              <span class="is-size-3">Mujiデザインの車</span><br><br>
+
+              日本の無印商品は海外ではMUJIブランドとして知られています。洗練されたシンプルなデザインが海外でも大人気。その<a
+                href="https://www.fastcompany.com/90260258/muji-just-made-a-driverless-shuttle-bus-and-its-a-minimalist-wonder-on-wheels?partner=rss&utm_source=facebook.com&utm_medium=social&utm_campaign=rss+fastcompany&utm_content=rss&fbclid=IwAR0CW8SPbRjHRGxUZXP-CfgjRUDVQdnF0Q6L2KHRErhabRXGrSEgwwtmiDg">MUJIがデザインした自動運転のシャトルバスがフィンランドで導入されるそうです</a>。来年3月にはヘルシンキの町を走るそうです。乗ってみたいですね。
+              <br>
+              <br>
+              <div class="has-text-center is-10">
+                <figure class="image blog2 is-16by9">
+
+                </figure>
+              </div>
+              <br>
+              <br><br>
+              <div class="onlyPadding"></div>
+              <span class="is-size-6 has-text-center">
+                March 8, 2018
+              </span><br>
+              <span class="is-size-3">新しい挑戦をしたくなる歳がある？</span><br><br>
+
+              皆さんは何かチャレンジをしていますか？私は、行き当たりばったりの人生ですが、一つ心掛けているのは、自分のComfort
+              zoneからとにかくはみ出ることです。自分の心地よいことだけを続けていても、成長はない、と戒めて、何らかの小さな挑戦をするようにしています。実は私は生来、恥ずかしがり屋。だから、マンションのエレベーターなどで、誰か知らない人に一日一人以上は話しかける、とか。そうしているうちにだんだんと度胸がついてくるものです。
+
+              そんな小さなチャレンジからおっきなチャレンジまで、より大きな挑戦をしたくなる年齢があるそうです。それが、〇十代の最後の年、つまり29，39，49，59という年だそう。なんだかわかる気がします。節目の年に何か新しいステップを踏み出したくなるもの。皆さんはいかがですか？昨日と違う何か始めてみませんか？<br>
+              <a href="http://www.pnas.org/content/111/48/17066.long">http://www.pnas.org/content/111/48/17066.long</a>
+              <br><br>
+              <br>
+              <div class="onlyPadding"></div>
+              <span class="is-size-6 has-text-center">
+                March 5, 2018
+              </span><br>
+              <span class="is-size-3">よそ見する男性は浮気する？</span><br><br>
+              フロリダ州立大学の調査によれば、自分のパートナーより魅力的な他の人によそ見する男性は50％浮気の確率が高いとか。魅力的でない女性の方が浮気しやすく、結婚前に女性との短期的関係が多かった男性の方が浮気するけれど、女性の場合は、そういった関係性が多い人ほど浮気をしないという結果だったそうです。意外のようなそうでないような…。
+              <br> <a
+                href="http://www.businessinsider.com/signs-people-will-cheat-2018-2">http://www.businessinsider.com/signs-people-will-cheat-2018-2</a>
+
+              <br><br><br>
+
+              <div class="onlyPadding"></div>
+              <span class="is-size-6 has-text-center">
+                March 5, 2018
+              </span><br>
+              <span class="is-size-3">中国でも女性専用列車。でも…。</span><br><br>
+              中国の広州市の地下鉄でも、女性専用列車が導入されているそうですが、男性がドカドカ乗り込んできて、全くその役割を果たしていないとか…。どこも同じような話があるものですね。気になったのは、中国でも混んだ社内での痴漢の被害が絶えないこと。アメリカなどで、痴漢の話を聞くことはあまりないのは、それほど電車が混んでいない、ということもあるでしょうが、たぶん、そんなことをしたら、女性は大声で叫ぶでしょうし、周りの人も黙っていないでしょう。日本やその他アジアの国々では、まだまだ、女性が声を上げにくい雰囲気があるような気がします。テクノロジーの力で、こうした犯罪を防ぐ上手な方法はないものでしょうかね。
+              <br> <a href="https://www.nytimes.com/2018/03/04/business/china-women-only-subway-cars.html">記事へ</a>
+              <br><br>
+              <br>
+              <div class="onlyPadding"></div>
+              <span class="is-size-6 has-text-center">
+                January 6, 2017
+              </span><br>
+              <span class="is-size-3">ピーナッツアレルギーにはピーナツを！？</span><br><br>
+              ピーナッツアレルギーの対処には、赤ちゃんが6か月になる前にピーナッツを液体状（ピーナッツバターを水に溶かしたものなど）にして与えるといいのですって。アレルギー体質が体内に出来上がる前に、慣らしておくことが重要らしいです。
+              <br><br>
+              アメリカでは2％の人がピーナッツアレルギーだそうです。命にもかかわりますから、ご家族も本人も大変です。
+
+              <br><br>
+              でも、赤ちゃんの内って、ちょっと怖いですよね…。心配な方はお医者さんに相談してから、の方がいいかもしれませんね。
+
+              <br><br>
+
+
+              こちらがニューヨークタイムズの記事です。 <br> <a href="
+http://www.nytimes.com/2017/01/05/well/eat/feed-your-kids-peanuts-early-and-often-new-guidelines-urge.html?smid=fb-nytimes&smtyp=cur
+">記事へ</a>
+
+              <br><br> <br>
+
+              <div class="onlyPadding"></div>
+              <span class="is-size-6 has-text-center">
+                January 6, 2017
+              </span><br>
+              <span class="is-size-3">明けましておめでとうございます。</span><br><br>
+              2017年、皆さんの抱負は何でしょうか？<br><br>
+
+              私の抱負は「ポジティブ」です。ネガティブな言葉、不平不満をこぼさない。周りのネガティブな言葉も上手にスルーできるようにする。そして、皆さんがポジティブな気持ちになれるストーリーをたくさん、お伝えしていけたら…と考えています。なるべくブログも更新するぞ～！！
+              <br><br>
+              Be positive!　皆様にとって幸多くポジティブな年になりますように！今年もよろしくお願いいたします！！ <br><br>
+              <br><br>
+              <div class="onlyPadding"></div>
+              <span class="is-size-6 has-text-center">
+                March 19, 2016
+              </span><br>
+              <span class="is-size-3">プロ経営者の終焉？</span><br><br>
+              　アメリカでは会社のトップはエリートプロ経営者が多いイメージがありますが、ウォールストリートジャーナル紙の記事によると、内部昇格者がトップになるケースが増えているそうです。<br><br>
+              　人材紹介会社のSpencer
+              Stuartが行った調査によると、S&P500の会社のうち、昨年、CEOを選んだ会社の５社に４社が、内部から選んだのだとか。2004年の調査開始から最も高い水準になったのだそうです。<br><br>
+
+              ハーバードビジネスレビューの記事によれば、外部から採用したCEOの企業の方が、内部から登用した会社より成功していない、という調査もあるようです。やはり、業界慣行などを知らない人は不利だ、という分析。コストカットはできるが、成長とイノベーションまでに結び付けるのは難しい、と手厳しい指摘です。<br><br>
+
+              　内部昇格者の中でも、本社でエリートコースを歩んできた人材よりも、一時期でも海外などに出て、本社を離れた“inside-outsiders.”の方が、会社を客観的に観察し、問題点などを洗い出すことができるそうです。成功例として、マツダの元社長で、今フォードのCEOを務めるマーク・フィールズさんの例が挙げられています。<br><br>
+
+              どこでも、内向きではなく、大局観を持った経営者が求められている、ということですね。 <br><br>
+
+              <br><br>
+
+              <div class="onlyPadding"></div>
+              <span class="is-size-6 has-text-center">
+                January 6, 2016
+              </span><br>
+              <span class="is-size-3">ソーシャルで最もアクティブなラグジュアリーブランドは</span><br><br>
+              明けましておめでとうございます！
+              <br><br>
+              2016年はどんな年にしたいですか？我々にとっては、少しずつ蒔いたタネが芽吹きそうな予感のする年です。謙虚に、そしてアグレッシブに、昨日までなかったワクワク・ドキドキ！をお届けしたいと思っています。
+              <br><br>
+              今年最初の話題は、ソーシャル上で最もアクティブなラグジュアリーブランドのランキングです。
+              <br><br>
+              ユーザーとのエンゲージメントやフィードなどを独自に指数化して出したものだそう。
+              <br><br>
+              1位はFACEBOOKでは、CHRISTIAN LOUBOUTIN、TWITTERではTIFFANY & CO、INSTAGRAMではVALENTINOだそうです。
+              詳しくは以下のサイトでどうぞ～。 <br> <a href="
+http://blog.newscred.com/christian-louboutin-tiffany-co-valentino-lead-luxury-brands-on-social-media/?utm_source=newsletter&utm_medium=email&mkt_tok=3RkMMJWWfF9wsRons6zKZKXonjHpfsX67OskX6S1lMI%2F0ER3fOvrPUfGjI4FSspkI%2BSLDwEYGJlv6SgFT7jAMaZkw7gJWBk%3D
+">記事へ</a>
+              <br>
+              <br>
+              <div class="onlyPadding"></div>
+
+              <span class="is-size-6 has-text-center">
+                April 5, 2015
+              </span><br>
+              <span class="is-size-3">
+                ウォールマートに学ぶ海外展開の６つの法則
+              </span><br>
+              <span class="is-size-6 has-text-center">
+                Global PR
+              </span><br><br>
+              27か国に１万以上の店舗を展開する世界最大の小売りチェーン、ウォルマート。スタンフォードのビジネススクールのサイトに掲載されていた海外マーケティングの６つの法則が興味深いので紹介します。
+              <br><br>
+              世界で最も大きな会社を任されているのは48歳のダグ・マクミロン氏。学生時代のトラックの荷卸しから始まり、ずっとウォルマートと歩んできた叩き上げのCEOで、2014年に現在の職に昇格されまで、5年間、海外ビジネスの展開に関わってきたそうです。
+              <br><br>
+              その彼の6つの法則は<br>
+              ①文化の違いを尊重する<br>
+              ②それぞれの国の政府のルールに順応する<br>
+              ③それぞれの国の人々の趣味嗜好を理解する<br>
+              ④現地のスタッフに責任を与え、知見やノウハウを委譲する<br>
+              ⑤とにかく自ら見て回れ<br>
+              ⑥コンセンサス（合意）を待っていては遅い！<br>
+              ⑥が特に興味深いな、と感じました。日本企業の特徴はとにかく合意がとれるまで、会議を重ね、熟考すること。そのため、決断にとにかく時間がかかります。<br>
+              ウォルマートにはWho owns the D？というフレーズがあるそうです。Who is the decision-maker?<br>
+              ということだそうですが、ディシジョンメーカーとなった人は、チームの様々な意見を集約することは重要であるが、コンセンサスを待っていてはいけない、ということです。<br>
+              アメリカの会社の日本の会社との大きな違いは意思決定者がきっちりと決まっている点かな、と思います。日本では、中間管理職は決定権・裁量権を持たない一方で、アメリカでは、店長や部門の責任者が独自で判断し、決定を下すことも少なくありません。日本では、稟議書を回して、全役員の同意を得て、ようやく決定する、という慣行が多いのではないでしょうか。慎重にものを進めることには利点もありますが、スピード勝負の時代に、機会を逸することにもなりかねません。
+              <br>
+              コンセンサスを待っていては遅いのです。<br> <a href="
+http://www.gsb.stanford.edu/insights/walmart-ceo-waiting-consensus-can-kill-you">記事へ</a>
+              <br>
+
+              <div class="onlyPadding"></div>
+              <span class="is-size-6 has-text-center">
+                March 30, 2015
+              </span><br>
+              <span class="is-size-3">スティーブジョブズのプレゼンへのこだわり</span><br><br>
+              <span class="is-size-6 has-text-center">
+                コミュニケーションのハウツー
+              </span>
+              <br><br>
+              高い完成度で知られたスティーブジョブズのプレゼン。そのこだわりもすさまじかったようです。<br><br>
+
+              以下の記事によれば、ジョブズはプレゼンの何か月も前からそのストーリーや見せ方、演出までを徹底して準備したそうです。<br><br>
+
+              "Becoming Steve Jobs: The Evolution of a Reckless Upstart Into a Visionary Leader," の著者Brent Schlender
+              とRick
+              Tetzeliは「一日まるごとかけて、スポットライトの色やアングル、プレゼンの順番などを細かくチェックする」場面に付き合ったことを書いています。何か技術的な問題がおこると、目に見えて不機嫌になったとか。
+              <br><br>
+              知り合いのジャーナリストに、プレゼンの中のセリフや例えが「響く」ものかを尋ねたりもしたそうです。こんな感じで数か月かけて作り上げたわけです。
+              <br><br>
+              私も企業の発表会のお手伝いによく立ち会いましたが、ほとんどはリハーサルなどはせいぜい2回程度。原稿を渡されて、これをしゃべってくださいね、とセリフを渡される社長さんも多いようです。
+              <br><br>
+              ティム・クックも最初はやや無表情、と揶揄されましたが、今ではすっかり慣れたよう。Practice makes Perfect!　こだわりと場数が大事ですね！！<br>
+              <a href="http://www.businessinsider.com/steve-jobs-used-to-obsess-over-presentations-2015-3">記事へ</a>
+              <br>
+
+              <div class="onlyPadding"></div>
+              <span class="is-size-6 has-text-center">
+                March 29, 2015
+              </span><br>
+              <span class="is-size-3">間食の誘惑を断ち切る方法</span><br><br>
+              <span class="is-size-6 has-text-center">
+                知っ得！
+
+              </span>
+              <br><br>
+              コンピュータの前に座ってデスクワーク。つい、間食したくなる誘惑にかられます。そんな時は、15分、ちょっとした運動をするのがいいそうです。ジムに行くのは難しいとしても、歩いてみたり、体を動かすことで、衝動が抑えられるのだとか！<br>
+              <a
+                href="http://www.spring.org.uk/2015/03/stop-food-cravings-in-15-minutes-with-this-easy-trick.php">記事へ</a>
+
+              <br>
+
+              <div class="onlyPadding"></div>
+              <span class="is-size-6 has-text-center">
+                March 27, 2015
+              </span><br>
+              <span class="is-size-3">コミュニケーションのチカラ～デザインを変えたら・・</span><br><br>
+              <span class="is-size-6 has-text-center">
+                コミュニケーションのハウツー
+              </span>
+              <br><br>
+              ホームレスの多いニューヨーク。くたびれた段ボール紙に、「おなかがすいた」とか「お金がない」などと書いて、座っている。そんな彼らを見かけるたびに、「コミュ力」はきっと彼らの集金力につながるはず、と感じていた。段ボールに書かれたメッセージによって、心の動かされ方が変わってくるからだ。あるホームレスは紙で作った魚と釣竿をおいて、「あなたの良心を釣れたらいいな」というようなことをメッセージとして掲げていた。なかなか賢い。やはり、結構人が集まっていた。
+              <br><br>
+              だから、どんなメッセージが、道行く人の心をとらえるのか・・・。そんな実験をやったら面白いだろうなと思っていたら、あるデザイナーの人が、メッセージボードにデザインを加えるという実験を始めた。きれいなカリグラフィーのデザインで、通行人の関心をひく、というわけだ。
+              <br><br>
+              <figure class="image blog3  is-2by1">
+
+                メッセージボードはこんな感じ。
+              </figure>
+              <br>
+              <br>
+
+              実験をしているのはシカゴのアートディレクター。彼のサイトは下記の通り。
+
+              <br>
+              <a href="
+http://urbantypeexperiment.tumblr.com/
+">記事へ</a>
+
+              <br>
+              <br>
+              もう一つ、ホームレスのメッセージということでは、下記の動画が素敵。言葉を変えれば、こんなに人を動かせるんだ、と気づかされる。
+              <br>
+              <br>
+              The Power of Words
+
+              <br>
+              <br>
+              <iframe width="1280" height="720" src="https://www.youtube.com/embed/Hzgzim5m7oU" style="height:720px"
+                frameborder="0" allowfullscreen></iframe><br>素敵です。
+
+              <div class="onlyPadding"></div>
+              <span class="is-size-6 has-text-center">
+                March 25, 2015
+              </span><br>
+              <span class="is-size-3">M&Aリリースにもインフォグラフィックスが登場</span><br>
+              <span class="is-size-6 has-text-center">
+                PR
+              </span>
+              <br><br>
+
+              巨大食品会社H.J. Heinz Companyと Kraft Foodsが合併を発表しました。成立すれば世界第五位の食品会社となります。
+              <br>
+
+              リリースはこちら。
+              <br>
+              <a
+                href="http://www.prnewswire.com/news-releases/hj-heinz-company-and-kraft-foods-group-sign-definitive-merger-agreement-to-form-the-kraft-heinz-company-300055709.html">記事へ</a>
+
+              <br>
+              <br>気になったのは、合併したらどんな会社になるかという姿をインフォグラフィックスとして、リリースに使っているところ。リリースのビジュアル化はこれからもどんどん進みそうですね。
+
+              <br>
+              <br>
+              <figure class="image blog4" style="height:900px;width:900px;">
+
+              </figure>
+
+            </h1>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class=" hero is-middle is-default is-bold">
+    <div class="hero-body has-background-white">
+      <div class="container has-text-centered">
+        <div class="columns is-vcentered " data-aos="fade-up">
+          <div class="column is-5">
+            <h1 class="title   textStyleSerif ">
+              CONTACT
+            </h1>
+
+          </div>
+          <div class="column is-7">
+            <h1 class="subtitle is-4 is-size-5 has-text-center">
+              <br>
+              <br>
+              株式会社グローコム<br>
+              <a href="mailto:info@glocomm.co.jp" target="_top">info@glocomm.co.jp</a>
+            </h1>
+            <br>
+          </div>
+
+        </div>
+        <hr>
+        <div class="column is-12 ">
+          <h1 class="subtitle is-4 is-size-5 has-text-center   textStyleSerif">
+            Global Communications and Solutions Inc.
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

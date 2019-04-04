@@ -39,6 +39,10 @@ hr {
   background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 }
 
+.onlyPadding {
+  padding: 100px;
+}
+
 .gradientsMedia {
   background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
 }
@@ -53,6 +57,26 @@ hr {
 
 .gradientsAbout {
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.blog1 {
+  background-image: url("img/blog1.jpeg");
+  background-repeat: no-repeat;
+}
+
+.blog2 {
+  background-image: url("img/blog2.jpg");
+  background-repeat: no-repeat;
+}
+
+.blog3 {
+  background-image: url("img/blog3.jpeg");
+  background-repeat: no-repeat;
+}
+
+.blog4 {
+  background-image: url("img/blog4.jpeg");
+  background-repeat: no-repeat;
 }
 
 .workImg {
