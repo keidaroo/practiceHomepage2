@@ -55,6 +55,11 @@ hr {
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 
+.workImg {
+  background-image: url("img/workImg.png");
+  background-repeat: no-repeat;
+}
+
 .listing {
   margin-left: 2em;
 }
